@@ -47,7 +47,7 @@ $Label1.Font                     = New-Object System.Drawing.Font('Microsoft San
 $Panel2                          = New-Object system.Windows.Forms.Panel
 $Panel2.height                   = 159
 $Panel2.width                    = 588
-$Panel2.location                 = New-Object System.Drawing.Point(9,293)
+$Panel2.location                 = New-Object System.Drawing.Point(9,90)
 
 $Label3                          = New-Object system.Windows.Forms.Label
 $Label3.text                     = "System Tweaks"
