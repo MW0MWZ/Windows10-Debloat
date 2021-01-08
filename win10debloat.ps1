@@ -227,7 +227,7 @@ $securitywindowsupdate.location  = New-Object System.Drawing.Point(20,119)
 $securitywindowsupdate.Font      = New-Object System.Drawing.Font('Microsoft Sans Serif',14)
 
 $Label16                         = New-Object system.Windows.Forms.Label
-$Label16.text                    = "I recommend doing security updates only."
+$Label16.text                    = "Security updates only sets the following;"
 $Label16.AutoSize                = $true
 $Label16.width                   = 25
 $Label16.height                  = 10
