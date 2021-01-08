@@ -54,7 +54,7 @@ $Label3.text                     = "System Tweaks"
 $Label3.AutoSize                 = $true
 $Label3.width                    = 230
 $Label3.height                   = 25
-$Label3.location                 = New-Object System.Drawing.Point(195,251)
+$Label3.location                 = New-Object System.Drawing.Point(195,60)
 $Label3.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',24)
 
 $essentialtweaks                 = New-Object system.Windows.Forms.Button
@@ -123,7 +123,7 @@ $Label4.text                     = "Security"
 $Label4.AutoSize                 = $true
 $Label4.width                    = 117
 $Label4.height                   = 25
-$Label4.location                 = New-Object System.Drawing.Point(761,252)
+$Label4.location                 = New-Object System.Drawing.Point(761,60)
 $Label4.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',24)
 
 $securitylow                     = New-Object system.Windows.Forms.Button
