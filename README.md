@@ -6,4 +6,4 @@ The only real difference is that I remove the install of Chocolatey and related 
 
 
 To run this script, use powershell and call the following:
-iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/MW0MWZ/Windows10-Debloat/main/win10debloat.ps1'))
+>iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/MW0MWZ/Windows10-Debloat/main/win10debloat.ps1'))
