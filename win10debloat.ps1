@@ -1,4 +1,4 @@
-Add-Type -AssemblyName System.Windows.Forms
+ Add-Type -AssemblyName System.Windows.Forms
 [System.Windows.Forms.Application]::EnableVisualStyles()
 
 $ErrorActionPreference = 'SilentlyContinue'
@@ -27,34 +27,21 @@ If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
 }
 
 $Form                            = New-Object system.Windows.Forms.Form
-$Form.ClientSize                 = New-Object System.Drawing.Point(1050,700)
+$Form.ClientSize                 = New-Object System.Drawing.Point(1050,470)
 $Form.text                       = "Form"
 $Form.TopMost                    = $false
-
-$Panel1                          = New-Object system.Windows.Forms.Panel
-$Panel1.height                   = 156
-$Panel1.width                    = 1032
-$Panel1.location                 = New-Object System.Drawing.Point(9,90)
-
-$Label1                          = New-Object system.Windows.Forms.Label
-$Label1.text                     = "Program Installation"
-$Label1.AutoSize                 = $true
-$Label1.width                    = 25
-$Label1.height                   = 10
-$Label1.location                 = New-Object System.Drawing.Point(10,30)
-$Label1.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',30)
 
 $Panel2                          = New-Object system.Windows.Forms.Panel
 $Panel2.height                   = 159
 $Panel2.width                    = 588
-$Panel2.location                 = New-Object System.Drawing.Point(9,90)
+$Panel2.location                 = New-Object System.Drawing.Point(9,60)
 
 $Label3                          = New-Object system.Windows.Forms.Label
 $Label3.text                     = "System Tweaks"
 $Label3.AutoSize                 = $true
 $Label3.width                    = 230
 $Label3.height                   = 25
-$Label3.location                 = New-Object System.Drawing.Point(195,60)
+$Label3.location                 = New-Object System.Drawing.Point(195,20)
 $Label3.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',24)
 
 $essentialtweaks                 = New-Object system.Windows.Forms.Button
@@ -116,14 +103,14 @@ $onedrive.Font                   = New-Object System.Drawing.Font('Microsoft San
 $Panel3                          = New-Object system.Windows.Forms.Panel
 $Panel3.height                   = 158
 $Panel3.width                    = 440
-$Panel3.location                 = New-Object System.Drawing.Point(601,293)
+$Panel3.location                 = New-Object System.Drawing.Point(601,60)
 
 $Label4                          = New-Object system.Windows.Forms.Label
 $Label4.text                     = "Security"
 $Label4.AutoSize                 = $true
 $Label4.width                    = 117
 $Label4.height                   = 25
-$Label4.location                 = New-Object System.Drawing.Point(761,60)
+$Label4.location                 = New-Object System.Drawing.Point(761,20)
 $Label4.Font                     = New-Object System.Drawing.Font('Microsoft Sans Serif',24)
 
 $securitylow                     = New-Object system.Windows.Forms.Button
@@ -217,13 +204,13 @@ $Label15.text                    = "Windows Update"
 $Label15.AutoSize                = $true
 $Label15.width                   = 25
 $Label15.height                  = 10
-$Label15.location                = New-Object System.Drawing.Point(58,459)
+$Label15.location                = New-Object System.Drawing.Point(58,250)
 $Label15.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',24)
 
 $Panel4                          = New-Object system.Windows.Forms.Panel
 $Panel4.height                   = 168
 $Panel4.width                    = 340
-$Panel4.location                 = New-Object System.Drawing.Point(9,491)
+$Panel4.location                 = New-Object System.Drawing.Point(9,290)
 
 $defaultwindowsupdate            = New-Object system.Windows.Forms.Button
 $defaultwindowsupdate.text       = "Default Settings"
@@ -276,7 +263,7 @@ $Label20.text                    = "Instructions"
 $Label20.AutoSize                = $true
 $Label20.width                   = 169
 $Label20.height                  = 23
-$Label20.location                = New-Object System.Drawing.Point(581,463)
+$Label20.location                = New-Object System.Drawing.Point(581,250)
 $Label20.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',24)
 
 $Label21                         = New-Object system.Windows.Forms.Label
@@ -284,7 +271,7 @@ $Label21.text                    = "- This will modify your system and I highly 
 $Label21.AutoSize                = $true
 $Label21.width                   = 150
 $Label21.height                  = 10
-$Label21.location                = New-Object System.Drawing.Point(390,507)
+$Label21.location                = New-Object System.Drawing.Point(390,290)
 $Label21.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
 $Label22                         = New-Object system.Windows.Forms.Label
@@ -295,21 +282,6 @@ $Label22.height                  = 10
 $Label22.location                = New-Object System.Drawing.Point(4,14)
 $Label22.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
 
-$Label23                         = New-Object system.Windows.Forms.Label
-$Label23.text                    = "- Need to Restore action center, cortana, etc.? Run the Restore Script: https://youtu.be/H2ydDcqRZyM"
-$Label23.AutoSize                = $true
-$Label23.width                   = 150
-$Label23.height                  = 10
-$Label23.location                = New-Object System.Drawing.Point(390,529)
-$Label23.Font                    = New-Object System.Drawing.Font('Microsoft Sans Serif',10)
-
-$PictureBox1                     = New-Object system.Windows.Forms.PictureBox
-$PictureBox1.width               = 412
-$PictureBox1.height              = 125
-$PictureBox1.location            = New-Object System.Drawing.Point(449,541)
-$PictureBox1.imageLocation       = "https://github.com/ChrisTitusTech/win10script/blob/master/titus-toolbox.png?raw=true"
-$PictureBox1.SizeMode            = [System.Windows.Forms.PictureBoxSizeMode]::zoom
-
 $lightmode                       = New-Object system.Windows.Forms.Button
 $lightmode.text                  = "Light Mode"
 $lightmode.width                 = 150
@@ -317,8 +289,7 @@ $lightmode.height                = 30
 $lightmode.location              = New-Object System.Drawing.Point(417,45)
 $lightmode.Font                  = New-Object System.Drawing.Font('Microsoft Sans Serif',12)
 
-$Form.controls.AddRange(@($Panel1,$Label1,$Panel2,$Label3,$Panel3,$Label4,$Label15,$Panel4,$Label20,$Label21,$Label23,$PictureBox1))
-$Panel1.controls.AddRange(@($installchoco,$brave,$firefox,$7zip,$irfanview,$adobereader,$notepad,$gchrome,$mpc,$vlc,$powertoys,$winterminal,$vscode,$Label2))
+$Form.controls.AddRange(@($Panel2,$Label3,$Panel3,$Label4,$Label15,$Panel4,$Label20,$Label21))
 $Panel2.controls.AddRange(@($essentialtweaks,$backgroundapps,$cortana,$windowssearch,$actioncenter,$darkmode,$visualfx,$onedrive,$Label22,$lightmode))
 $Panel3.controls.AddRange(@($securitylow,$securityhigh,$Label5,$Label6,$Label7,$Label8,$Label9,$Label10,$Label11,$Label12,$Label13))
 $Panel4.controls.AddRange(@($defaultwindowsupdate,$securitywindowsupdate,$Label16,$Label17,$Label18,$Label19))
@@ -329,8 +300,8 @@ $essentialtweaks.Add_Click({
     Checkpoint-Computer -Description "RestorePoint1" -RestorePointType "MODIFY_SETTINGS"
 
 	Write-Host "Running O&O Shutup with Recommended Settings"
-    Import-Module BitsTransfer		choco install shutup10 -y
-	Start-BitsTransfer -Source "https://raw.githubusercontent.com/ChrisTitusTech/win10script/master/ooshutup10.cfg" -Destination ooshutup10.cfg		OOSU10 ooshutup10.cfg /quiet
+    Import-Module BitsTransfer		install shutup10 -y
+	Start-BitsTransfer -Source "https://raw.githubusercontent.com/MW0MWZ/Windows10-Debloat/main/ooshutup10.cfg" -Destination ooshutup10.cfg		OOSU10 ooshutup10.cfg /quiet
 	Start-BitsTransfer -Source "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -Destination OOSU10.exe	
 	./OOSU10.exe ooshutup10.cfg /quiet
 
@@ -812,4 +783,4 @@ $lightmode.Add_Click({
 	$wshell.Popup("Operation Completed",0,"Done",0x0)
 })
 
-[void]$Form.ShowDialog()
+[void]$Form.ShowDialog() 
